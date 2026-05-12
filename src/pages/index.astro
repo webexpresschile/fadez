@@ -1,7 +1,26 @@
 ---
 import Base from '../layouts/Base.astro';
 import site from '../data/site.json';
-const { brand, hero, services, lookbook, about, testimonials, cta, footer } = site;
+import { getSiteConfig } from '../lib/sanity';
+
+let sanity;
+try {
+  sanity = await getSiteConfig();
+} catch (_) { /* fallback to JSON */ }
+
+const data = sanity ? {
+  brand: { name: sanity.brandName, logo: sanity.brandLogo, logoGold: sanity.brandLogoGold },
+  hero: { location: sanity.heroLocation, barberName: sanity.heroBarberName, title: sanity.heroTitle, subtitle: sanity.heroSubtitle, cta: sanity.heroCta, ctaLink: sanity.heroCtaLink, ctaSecondary: sanity.heroCtaSecondary, ctaSecondaryLink: sanity.heroCtaSecondaryLink, image: sanity.heroImage, ghost: sanity.brandLogoGold },
+  services: { eyebrow: sanity.servicesEyebrow, title: sanity.servicesTitle, ghost: 'CUT', items: sanity.servicesItems || [] },
+  lookbook: { eyebrow: sanity.lookbookEyebrow, title: sanity.lookbookTitle, cta: sanity.lookbookCta, items: sanity.lookbookItems || [] },
+  about: { eyebrow: sanity.aboutEyebrow, title: sanity.aboutTitle, image: sanity.aboutImage, imageAlt: sanity.aboutImageAlt, statsBadge: sanity.aboutStatsBadge, statsBadgeLabel: sanity.aboutStatsBadgeLabel, paragraphs: sanity.aboutParagraphs || [], stats: sanity.aboutStats || [] },
+  testimonials: { eyebrow: sanity.testimonialsEyebrow, title: sanity.testimonialsTitle, items: sanity.testimonialsItems || [] },
+  cta: { label: sanity.ctaLabel, title: sanity.ctaTitle, subtitle: sanity.ctaSubtitle, phone: sanity.ctaPhone, whatsappUrl: sanity.ctaWhatsappUrl, ghost: 'BOOK' },
+  footer: { tagline: sanity.footerTagline, social: { instagram: sanity.footerInstagram, tiktok: sanity.footerTiktok, whatsapp: sanity.footerWhatsapp, facebook: sanity.footerFacebook }, contact: { address: sanity.footerAddress, phone: sanity.footerPhone, tel: sanity.footerTel, email: sanity.footerEmail, hours: sanity.footerHours }, menu: sanity.footerMenu || [], copyright: sanity.footerCopyright },
+  seo: { title: sanity.seoTitle, description: sanity.seoDescription },
+} : site;
+
+const { brand, hero, services, lookbook, about, testimonials, cta, footer } = data;
 ---
 
 <Base>
