@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: aaRangel/fadez
+  repo: webexpresschile/fadez
   branch: main
   site_domain: webexpresschile.github.io
   base_url: https://webexpresschile.github.io
