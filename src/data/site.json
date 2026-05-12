@@ -1,0 +1,107 @@
+{
+  "brand": {
+    "name": "FADE STUDIO",
+    "logo": "FADE",
+    "logoGold": "FADE"
+  },
+  "hero": {
+    "location": "Puerto Cabello, VE",
+    "barberName": "Carlos Fadez",
+    "preTitle": "Carlos Fadez · Puerto Cabello, VE",
+    "title": "EL ESTÁNDAR<br>DE <mark>ORO</mark> EN<br>CORTES",
+    "titlePlain": "EL ESTÁNDAR DE ORO EN CORTES",
+    "highlight": "ORO",
+    "subtitle": "Fusionamos técnica clásica con tendencias urbanas.<br>Elevamos tu confianza — no solo tu look.",
+    "cta": "Reserva tu Turno",
+    "ctaLink": "https://wa.me/584121234567",
+    "ctaSecondary": "Ver el Lookbook",
+    "ctaSecondaryLink": "#lookbook",
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1600&q=90",
+    "ghost": "FADE"
+  },
+  "services": {
+    "eyebrow": "Lo que hacemos",
+    "title": "NUESTROS<br>SERVICIOS",
+    "ghost": "CUT",
+    "items": [
+      { "num": "01", "icon": "✂️", "name": "CORTE SIGNATURE", "description": "Degradado perfecto adaptado a la morfología de tu rostro. Técnica milimétrica, acabado cinematográfico." },
+      { "num": "02", "icon": "🪒", "name": "BARBA PRO", "description": "Esculpido a navaja con aceites esenciales. Definición, hidratación y aroma que marcan la diferencia." },
+      { "num": "03", "icon": "👑", "name": "THE FULL EXPERIENCE", "description": "Corte, barba y ritual de toalla caliente. El tratamiento premium que mereces de principio a fin." }
+    ]
+  },
+  "lookbook": {
+    "eyebrow": "Galería",
+    "title": "THE LOOKBOOK<br>— NUESTRA FIRMA",
+    "highlight": "NUESTRA FIRMA",
+    "cta": "Ver todos los estilos →",
+    "items": [
+      { "image": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=900&q=80", "fullImage": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=1400&q=90", "tag": "Skin Fade", "caption": "SKIN FADE · Signature Cut" },
+      { "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=900&q=80", "fullImage": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1400&q=90", "tag": "Textured Crop", "caption": "TEXTURED CROP · Fresh Look" },
+      { "image": "https://images.unsplash.com/photo-1521490683712-35a1cb235d1c?w=900&q=80", "fullImage": "https://images.unsplash.com/photo-1521490683712-35a1cb235d1c?w=1400&q=90", "tag": "Classic Pompadour", "caption": "CLASSIC POMPADOUR · Timeless" },
+      { "image": "https://images.unsplash.com/photo-1541533848490-bc8115cd6522?w=900&q=80", "fullImage": "https://images.unsplash.com/photo-1541533848490-bc8115cd6522?w=1400&q=90", "tag": "Beard Sculpting", "caption": "BEARD SCULPTING · Precision Pro" },
+      { "image": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=900&q=80", "fullImage": "https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=1400&q=90", "tag": "Taper Fade", "caption": "TAPER FADE · Urban Edge" }
+    ]
+  },
+  "about": {
+    "eyebrow": "Nuestra historia",
+    "title": "PRECISIÓN<br>SIN<br>COMPROMISO",
+    "image": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=900&q=90",
+    "imageAlt": "Carlos Fadez — Barbero",
+    "statsBadge": "10+",
+    "statsBadgeLabel": "Años de arte",
+    "paragraphs": [
+      "Fade Studio no es solo una barbería — es un ritual. Desde el primer trazo de la navaja hasta el último ajuste frente al espejo, cada detalle está calculado para darte el mejor resultado.",
+      "Carlos Fadez lidera un equipo de artistas con más de una década perfeccionando técnicas de degradado, esculpido de barba y estilos clásicos para el hombre que no acepta lo ordinario."
+    ],
+    "stats": [
+      { "number": "2K+", "label": "Clientes satisfechos" },
+      { "number": "10+", "label": "Años de experiencia" },
+      { "number": "4.9★", "label": "Rating promedio" }
+    ]
+  },
+  "testimonials": {
+    "eyebrow": "Reviews",
+    "title": "LO QUE DICEN<br>NUESTROS CLIENTES",
+    "items": [
+      { "text": "El mejor fade que me han hecho en la vida. Carlos tiene una precisión brutal. No voy a ningún otro lado desde que lo descubrí.", "name": "Rodrigo Martínez", "role": "Cliente desde 2019", "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" },
+      { "text": "The Full Experience cambió mi rutina de autocuidado. El ritual de toalla caliente es otra cosa. Ambiente, música y servicio a otro nivel.", "name": "Diego Fuentes", "role": "Cliente frecuente", "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&q=80" },
+      { "text": "Vine por recomendación y llevo 2 años viniendo cada 2 semanas. El Corte Signature es perfecto para mi tipo de cara. Impecable siempre.", "name": "Andrés Torres", "role": "Cliente desde 2022", "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" }
+    ]
+  },
+  "cta": {
+    "label": "¿Listo para el cambio?",
+    "title": "RESERVA<br>TU <em>TURNO</em><br>AHORA",
+    "subtitle": "Agenda en minutos. Disponibilidad limitada —<br>los mejores se reservan con anticipación.",
+    "phone": "+584121234567",
+    "whatsappUrl": "https://wa.me/584121234567",
+    "ghost": "BOOK"
+  },
+  "footer": {
+    "tagline": "Precisión sin compromiso. Arte masculino en cada corte. Bienvenido al estándar de oro.",
+    "social": {
+      "instagram": "#",
+      "tiktok": "#",
+      "whatsapp": "#",
+      "facebook": "#"
+    },
+    "menu": [
+      { "label": "Servicios", "href": "#servicios" },
+      { "label": "Lookbook", "href": "#lookbook" },
+      { "label": "Nosotros", "href": "#nosotros" },
+      { "label": "Reviews", "href": "#testimonios" },
+      { "label": "Reservar turno", "href": "#reserva" }
+    ],
+    "contact": {
+      "address": "📍 Puerto Cabello, Venezuela",
+      "phone": "+58 412 123 4567",
+      "tel": "+584121234567",
+      "email": "hola@fadestudio.com",
+      "hours": "Lun – Sáb: 9:00 – 20:00"
+    },
+    "copyright": "FADE STUDIO · Carlos Fadez · Todos los derechos reservados"
+  },
+  "seo": {
+    "title": "FADE STUDIO — El Estándar de Oro en Cortes Masculinos",
+    "description": "Fade Studio. Cortes masculinos de alto nivel en Puerto Cabello. Técnica clásica con tendencia urbana. Reserva tu turno con Carlos Fadez."
+  }
+}

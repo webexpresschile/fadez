@@ -1,0 +1,153 @@
+backend:
+  name: github
+  repo: aaRangel/fadez
+  branch: main
+  site_domain: webexpresschile.github.io
+  base_url: https://webexpresschile.github.io
+
+media_folder: public/images
+public_folder: /fadez/images
+
+collections:
+  - name: site
+    label: "Contenido del Sitio"
+    description: "Edita todo el contenido de FADE STUDIO — hero, servicios, galería, reseñas, footer"
+    files:
+      - name: all_content
+        label: "Contenido Completo"
+        file: "src/data/site.json"
+        description: "Edita cualquier sección del sitio web"
+        fields:
+          - label: "Marca"
+            name: brand
+            widget: "object"
+            fields:
+              - { label: "Nombre", name: name, widget: "string" }
+              - { label: "Logo Texto", name: logo, widget: "string" }
+              - { label: "Logo Dorado", name: logoGold, widget: "string" }
+
+          - label: "Hero (Portada)"
+            name: hero
+            widget: "object"
+            fields:
+              - { label: "Ubicación", name: location, widget: "string" }
+              - { label: "Nombre del Barbero", name: barberName, widget: "string" }
+              - { label: "Título (usa <mark>ORO</mark> para resaltar)", name: title, widget: "string" }
+              - { label: "Subtítulo", name: subtitle, widget: "text" }
+              - label: "Botón Principal"
+                name: cta
+                widget: "string"
+              - label: "Link Botón Principal"
+                name: ctaLink
+                widget: "string"
+              - { label: "Texto Botón Secundario", name: ctaSecondary, widget: "string" }
+              - { label: "Link Botón Secundario", name: ctaSecondaryLink, widget: "string" }
+              - { label: "URL Imagen de Fondo", name: image, widget: "string" }
+
+          - label: "Servicios"
+            name: services
+            widget: "object"
+            fields:
+              - { label: "Subtítulo", name: eyebrow, widget: "string" }
+              - { label: "Título (usa <br> para salto)", name: title, widget: "string" }
+              - label: "Servicios"
+                name: items
+                widget: "list"
+                fields:
+                  - { label: "Número", name: num, widget: "string" }
+                  - { label: "Icono", name: icon, widget: "string" }
+                  - { label: "Nombre", name: name, widget: "string" }
+                  - { label: "Descripción", name: description, widget: "text" }
+
+          - label: "Lookbook (Galería)"
+            name: lookbook
+            widget: "object"
+            fields:
+              - { label: "Subtítulo", name: eyebrow, widget: "string" }
+              - { label: "Título", name: title, widget: "string" }
+              - { label: "CTA", name: cta, widget: "string" }
+              - label: "Imágenes"
+                name: items
+                widget: "list"
+                fields:
+                  - { label: "URL Imagen", name: image, widget: "string" }
+                  - { label: "URL Imagen Completa", name: fullImage, widget: "string" }
+                  - { label: "Etiqueta", name: tag, widget: "string" }
+                  - { label: "Texto", name: caption, widget: "string" }
+
+          - label: "Nosotros"
+            name: about
+            widget: "object"
+            fields:
+              - { label: "Subtítulo", name: eyebrow, widget: "string" }
+              - { label: "Título", name: title, widget: "string" }
+              - { label: "URL Imagen", name: image, widget: "string" }
+              - { label: "Texto Alternativo", name: imageAlt, widget: "string" }
+              - { label: "Badge Número", name: statsBadge, widget: "string" }
+              - { label: "Badge Texto", name: statsBadgeLabel, widget: "string" }
+              - label: "Párrafos"
+                name: paragraphs
+                widget: "list"
+                field: { label: "Párrafo", name: p, widget: "text" }
+              - label: "Estadísticas"
+                name: stats
+                widget: "list"
+                fields:
+                  - { label: "Número", name: number, widget: "string" }
+                  - { label: "Etiqueta", name: label, widget: "string" }
+
+          - label: "Testimonios"
+            name: testimonials
+            widget: "object"
+            fields:
+              - { label: "Subtítulo", name: eyebrow, widget: "string" }
+              - { label: "Título", name: title, widget: "string" }
+              - label: "Testimonios"
+                name: items
+                widget: "list"
+                fields:
+                  - { label: "Texto", name: text, widget: "text" }
+                  - { label: "Nombre", name: name, widget: "string" }
+                  - { label: "Rol", name: role, widget: "string" }
+                  - { label: "URL Avatar", name: avatar, widget: "string" }
+
+          - label: "CTA (Reserva)"
+            name: cta
+            widget: "object"
+            fields:
+              - { label: "Etiqueta", name: label, widget: "string" }
+              - { label: "Título (usa <em>TURNO</em> para resaltar)", name: title, widget: "string" }
+              - { label: "Subtítulo", name: subtitle, widget: "text" }
+              - { label: "Teléfono", name: phone, widget: "string" }
+              - { label: "URL WhatsApp", name: whatsappUrl, widget: "string" }
+
+          - label: "Footer"
+            name: footer
+            widget: "object"
+            fields:
+              - { label: "Tagline", name: tagline, widget: "text" }
+              - label: "Redes Sociales"
+                name: social
+                widget: "object"
+                fields:
+                  - { label: "Instagram URL", name: instagram, widget: "string" }
+                  - { label: "TikTok URL", name: tiktok, widget: "string" }
+                  - { label: "WhatsApp URL", name: whatsapp, widget: "string" }
+                  - { label: "Facebook URL", name: facebook, widget: "string" }
+              - label: "Contacto"
+                name: contact
+                widget: "object"
+                fields:
+                  - { label: "Dirección", name: address, widget: "string" }
+                  - { label: "Teléfono", name: phone, widget: "string" }
+                  - { label: "Tel (link)", name: tel, widget: "string" }
+                  - { label: "Email", name: email, widget: "string" }
+                  - { label: "Horario", name: hours, widget: "string" }
+              - { label: "Copyright", name: copyright, widget: "string" }
+
+          - label: "SEO"
+            name: seo
+            widget: "object"
+            fields:
+              - { label: "Título (tag)", name: title, widget: "string" }
+              - { label: "Descripción (meta)", name: description, widget: "text" }
